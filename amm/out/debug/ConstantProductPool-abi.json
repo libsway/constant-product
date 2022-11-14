@@ -1,0 +1,352 @@
+{
+  "types": [
+    {
+      "typeId": 0,
+      "type": "()",
+      "components": [],
+      "typeParameters": null
+    },
+    {
+      "typeId": 1,
+      "type": "(_, _)",
+      "components": [
+        {
+          "name": "__tuple_element",
+          "type": 10,
+          "typeArguments": null
+        },
+        {
+          "name": "__tuple_element",
+          "type": 10,
+          "typeArguments": null
+        }
+      ],
+      "typeParameters": null
+    },
+    {
+      "typeId": 2,
+      "type": "(_, _, _)",
+      "components": [
+        {
+          "name": "__tuple_element",
+          "type": 10,
+          "typeArguments": null
+        },
+        {
+          "name": "__tuple_element",
+          "type": 10,
+          "typeArguments": null
+        },
+        {
+          "name": "__tuple_element",
+          "type": 9,
+          "typeArguments": null
+        }
+      ],
+      "typeParameters": null
+    },
+    {
+      "typeId": 3,
+      "type": "b256",
+      "components": null,
+      "typeParameters": null
+    },
+    {
+      "typeId": 4,
+      "type": "enum ConstantProductError",
+      "components": [
+        {
+          "name": "INSUFFICIENT_LIQUIDITY_MINTED",
+          "type": 0,
+          "typeArguments": null
+        },
+        {
+          "name": "INSUFFICIENT_OUTPUT_AMOUNT",
+          "type": 0,
+          "typeArguments": null
+        },
+        {
+          "name": "INVALID_TO",
+          "type": 0,
+          "typeArguments": null
+        },
+        {
+          "name": "INSUFFICIENT_INPUT_AMOUNT",
+          "type": 0,
+          "typeArguments": null
+        },
+        {
+          "name": "K",
+          "type": 0,
+          "typeArguments": null
+        },
+        {
+          "name": "INSUFFICIENT_LIQUIDITY_BURNED",
+          "type": 0,
+          "typeArguments": null
+        }
+      ],
+      "typeParameters": null
+    },
+    {
+      "typeId": 5,
+      "type": "enum Identity",
+      "components": [
+        {
+          "name": "Address",
+          "type": 6,
+          "typeArguments": null
+        },
+        {
+          "name": "ContractId",
+          "type": 7,
+          "typeArguments": null
+        }
+      ],
+      "typeParameters": null
+    },
+    {
+      "typeId": 6,
+      "type": "struct Address",
+      "components": [
+        {
+          "name": "value",
+          "type": 3,
+          "typeArguments": null
+        }
+      ],
+      "typeParameters": null
+    },
+    {
+      "typeId": 7,
+      "type": "struct ContractId",
+      "components": [
+        {
+          "name": "value",
+          "type": 3,
+          "typeArguments": null
+        }
+      ],
+      "typeParameters": null
+    },
+    {
+      "typeId": 8,
+      "type": "struct U128",
+      "components": [
+        {
+          "name": "upper",
+          "type": 10,
+          "typeArguments": null
+        },
+        {
+          "name": "lower",
+          "type": 10,
+          "typeArguments": null
+        }
+      ],
+      "typeParameters": null
+    },
+    {
+      "typeId": 9,
+      "type": "u32",
+      "components": null,
+      "typeParameters": null
+    },
+    {
+      "typeId": 10,
+      "type": "u64",
+      "components": null,
+      "typeParameters": null
+    }
+  ],
+  "functions": [
+    {
+      "inputs": [],
+      "name": "token0",
+      "output": {
+        "name": "",
+        "type": 7,
+        "typeArguments": null
+      }
+    },
+    {
+      "inputs": [],
+      "name": "token1",
+      "output": {
+        "name": "",
+        "type": 7,
+        "typeArguments": null
+      }
+    },
+    {
+      "inputs": [],
+      "name": "get_reserves",
+      "output": {
+        "name": "",
+        "type": 2,
+        "typeArguments": null
+      }
+    },
+    {
+      "inputs": [],
+      "name": "price0_cumulative_last",
+      "output": {
+        "name": "",
+        "type": 8,
+        "typeArguments": null
+      }
+    },
+    {
+      "inputs": [],
+      "name": "price1_cumulative_last",
+      "output": {
+        "name": "",
+        "type": 8,
+        "typeArguments": null
+      }
+    },
+    {
+      "inputs": [],
+      "name": "k_last",
+      "output": {
+        "name": "",
+        "type": 8,
+        "typeArguments": null
+      }
+    },
+    {
+      "inputs": [
+        {
+          "name": "to",
+          "type": 5,
+          "typeArguments": null
+        }
+      ],
+      "name": "mint",
+      "output": {
+        "name": "",
+        "type": 8,
+        "typeArguments": null
+      }
+    },
+    {
+      "inputs": [
+        {
+          "name": "to",
+          "type": 5,
+          "typeArguments": null
+        }
+      ],
+      "name": "burn",
+      "output": {
+        "name": "",
+        "type": 1,
+        "typeArguments": null
+      }
+    },
+    {
+      "inputs": [
+        {
+          "name": "amount0_out",
+          "type": 10,
+          "typeArguments": null
+        },
+        {
+          "name": "amount1_out",
+          "type": 10,
+          "typeArguments": null
+        },
+        {
+          "name": "to",
+          "type": 5,
+          "typeArguments": null
+        }
+      ],
+      "name": "swap",
+      "output": {
+        "name": "",
+        "type": 0,
+        "typeArguments": null
+      }
+    },
+    {
+      "inputs": [],
+      "name": "sync",
+      "output": {
+        "name": "",
+        "type": 0,
+        "typeArguments": null
+      }
+    },
+    {
+      "inputs": [
+        {
+          "name": "tokenA",
+          "type": 7,
+          "typeArguments": null
+        },
+        {
+          "name": "tokenB",
+          "type": 7,
+          "typeArguments": null
+        }
+      ],
+      "name": "initialize",
+      "output": {
+        "name": "",
+        "type": 0,
+        "typeArguments": null
+      }
+    }
+  ],
+  "loggedTypes": [
+    {
+      "logId": 0,
+      "loggedType": {
+        "name": "",
+        "type": 4,
+        "typeArguments": []
+      }
+    },
+    {
+      "logId": 1,
+      "loggedType": {
+        "name": "",
+        "type": 4,
+        "typeArguments": []
+      }
+    },
+    {
+      "logId": 2,
+      "loggedType": {
+        "name": "",
+        "type": 4,
+        "typeArguments": []
+      }
+    },
+    {
+      "logId": 3,
+      "loggedType": {
+        "name": "",
+        "type": 4,
+        "typeArguments": []
+      }
+    },
+    {
+      "logId": 4,
+      "loggedType": {
+        "name": "",
+        "type": 4,
+        "typeArguments": []
+      }
+    },
+    {
+      "logId": 5,
+      "loggedType": {
+        "name": "",
+        "type": 4,
+        "typeArguments": []
+      }
+    }
+  ]
+}
